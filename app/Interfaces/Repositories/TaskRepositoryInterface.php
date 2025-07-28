@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Interfaces\Repositories;
 use App\Models\Task;
 
 interface TaskRepositoryInterface

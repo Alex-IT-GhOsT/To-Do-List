@@ -2,10 +2,12 @@
 
 namespace App\Providers;
 
-use Service\TaskServiceInterface;
-use TaskRepositoryInterface;
-use TaskRepository;
-use TaskService;
+use App\Interfaces\Repositories\TaskRepositoryInterface;
+use App\Interfaces\Service\TaskServiceInterface;
+use App\Repositories\Task\TaskRepository;
+use App\Services\TaskService\TaskService;
+use Illuminate\Support\ServiceProvider;
+
 
 class AppServiceProvider extends ServiceProvider
 {

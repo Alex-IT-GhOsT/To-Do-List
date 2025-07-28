@@ -1,6 +1,9 @@
 <?php
+namespace App\Services\TaskService;
 
-use Service\TaskServiceInterface;
+use App\Interfaces\Repositories\TaskRepositoryInterface;
+use App\Interfaces\Service\TaskServiceInterface;
+use App\Models\Task;
 
 class TaskService implements TaskServiceInterface
 {
@@ -12,12 +15,12 @@ class TaskService implements TaskServiceInterface
         return $this->taskRepository->all();
     }
 
-    public function getById(int $id): ?\App\Models\Task
+    public function getById(int $id): ?Task
     {
         return $this->taskRepository->find($id);
     }
 
-    public function create(array $data): \App\Models\Task
+    public function create(array $data): Task
     {
         return $this->taskRepository->create($data);
     }
