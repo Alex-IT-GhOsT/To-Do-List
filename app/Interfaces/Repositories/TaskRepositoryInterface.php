@@ -2,7 +2,7 @@
 
 use App\Models\Task;
 
-interface RepositoryInterface
+interface TaskRepositoryInterface
 {
     public function all(): array;
     public function find(string $id): ?Task;

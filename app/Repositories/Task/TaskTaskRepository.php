@@ -2,7 +2,7 @@
 
 use App\Models\Task;
 
-class TaskRepository implements RepositoryInterface
+class TaskRepository implements TaskRepositoryInterface
 {
     public function all(): array
     {
